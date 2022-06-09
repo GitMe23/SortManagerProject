@@ -8,7 +8,7 @@ import java.util.logging.FileHandler;
 import java.util.logging.Handler;
 import java.util.logging.Level;
 
-import static com.sparta.ah.App.logger;
+import static com.sparta.ah.SortManager.logger;
 
 public class LogConfig {
     public static void setLogConfig() {

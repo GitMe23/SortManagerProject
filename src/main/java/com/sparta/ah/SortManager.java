@@ -2,15 +2,14 @@ package com.sparta.ah;
 import com.sparta.ah.sorters.Sorter;
 import com.sparta.ah.utilities.RandomArrayGenerator;
 
+import java.util.logging.Logger;
+
 public class SortManager {
 
 
 
-
+    public static Logger logger = Logger.getLogger("sort logger");
     public static void run() {
-        // print intro
-
-
 
         int mainMenuInput = InputManager.getMainMenuChoice();
 

@@ -1,34 +1,6 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+*.log
 
-2022-06-08T14:26:04.6758785 INFO User entered: 1 for Binary Tree
-2022-06-08T14:27:24.8359457 INFO User entered: 2 for Bubble Sort
-2022-06-08T14:27:41.9484039 INFO User entered: 1 for Binary Tree
-2022-06-08T14:28:03.3846837 INFO User entered: 2 for Bubble Sort
-2022-06-08T14:45:56.8283282 INFO User entered: 2 for Bubble Sort
-2022-06-08T14:46:57.4840408 INFO User entered: 2 for Bubble Sort
-2022-06-08T14:47:07.6919199 INFO User entered: 2 for Bubble Sort
-2022-06-08T14:47:17.0793791 INFO User entered: 2 for Bubble Sort
-2022-06-08T18:54:39.2233742 INFO User entered: 2 for Bubble Sort
-2022-06-08T19:01:44.7049386 INFO User entered: 2 for Bubble Sort
-2022-06-09T09:08:51.3696494 INFO User entered: 1 for Binary Tree
-2022-06-09T09:09:03.9595655 INFO User entered: 2 for Bubble Sort
-2022-06-09T09:12:08.662749 INFO User entered: 2 for Bubble Sort
-2022-06-09T10:07:03.7678586 INFO User entered: 2 for Bubble Sort
-2022-06-09T10:25:51.652014 INFO User entered: 2 for Bubble Sort
-2022-06-09T10:27:06.0687946 INFO User entered: 1 for Binary Tree
-2022-06-09T11:28:34.468309 INFO User entered: 1 for Binary Tree
-2022-06-09T11:29:21.1518306 INFO User entered: 1 for Binary Tree
-2022-06-09T11:41:59.0109394 INFO User entered: 1 for Binary Tree
-2022-06-09T11:42:16.5501464 INFO User entered: 2 for Bubble Sort
-2022-06-09T11:43:35.9630482 INFO User entered: 1 for Binary Tree
-2022-06-09T11:43:51.4397392 INFO User entered: 2 for Bubble Sort
-2022-06-09T11:46:02.4556477 INFO User entered: 1 for Binary Tree
-2022-06-09T11:47:36.528554 INFO User entered: 2 for Bubble Sort
-2022-06-09T11:47:53.5895173 INFO User entered: 2 for Bubble Sort
-2022-06-09T11:49:31.9810451 INFO User entered: 2 for Bubble Sort
-2022-06-09T11:49:53.7639153 INFO User entered: 2 for Bubble Sort
-2022-06-09T11:50:16.2374451 INFO User entered: 1 for Binary Tree
-2022-06-09T12:04:18.0457473 INFO User entered: 3 for Insertion Sorter
-2022-06-09T12:18:10.5497883 INFO User entered: 1 for Binary Tree
+
