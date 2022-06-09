@@ -20,6 +20,7 @@ public class DisplayManager {
         System.out.println("1. Binary Tree Sorter");
         System.out.println("2. Bubble Sorter");
         System.out.println("3. Insertion Sorter");
+        System.out.println("4. Quick Sorter");
         System.out.println("");
     }
 
@@ -34,7 +35,7 @@ public class DisplayManager {
         int[] sortedArray = sorter.sortArray(arrayToSort);
         System.out.println(Arrays.toString(sortedArray));
         System.out.println("");
-        System.out.println("Sorting time for " + sorter.printSorterType() + ": " + sorter.getSortingTime() + " nano seconds.");
+        System.out.println("Sorting time for " + sorter.printSorterType() + ": " + sorter.getSortingTime() + " nanoseconds.");
         System.out.println("");
 
     }

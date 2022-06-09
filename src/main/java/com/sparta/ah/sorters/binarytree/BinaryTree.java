@@ -112,10 +112,6 @@ public class BinaryTree implements Sorter, BinaryTreeInterface {
 
     }
 
-
-
-
-
     /// all above working to here.
 
     @Override
