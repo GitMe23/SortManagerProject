@@ -11,7 +11,7 @@ public class InsertionSorter implements Sorter {
 
 
 
-    private static void sort(int[] array) {
+    public static void sort(int[] array) {
 
         // loop through each:
         for(int i=1; i < array.length; i++) {

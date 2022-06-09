@@ -20,13 +20,13 @@ public class SortManager {
             int arraySize = InputManager.getSizeOfArray();
 
 
-            // create sorter object from choice
+            // Using choice, create sorter object of Sorter type
             Sorter sorter = SortFactory.getSorter(choice);
             // generate array to sort
             int[] arrayToSort = RandomArrayGenerator.getRandomArray(arraySize);
 
             DisplayManager.printResults(sorter, arrayToSort);
-            mainMenuInput = InputManager.getMainMenuChoice();
+            mainMenuInput = InputManager.getRunAgainChoice();
             System.out.println("");
             System.out.println("--------------------- END ---------------------");
             System.out.println("");

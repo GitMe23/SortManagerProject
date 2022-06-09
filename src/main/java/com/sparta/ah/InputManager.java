@@ -1,4 +1,6 @@
 package com.sparta.ah;
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Scanner;
 
 public class InputManager {
@@ -23,6 +25,12 @@ public class InputManager {
         return size;
     }
 
+    public static int getRunAgainChoice() {
+        System.out.print("Enter 1 to run again, 0 to exit: ");
+        Scanner userInput = new Scanner(System.in);
+        int choice = Integer.parseInt(userInput.nextLine());
+        return choice;
+    }
 
 
 }
