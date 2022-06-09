@@ -1,12 +1,12 @@
 package com.sparta.ah.sorters.binarytree;
 
-import com.sparta.ah.Sorter;
+import com.sparta.ah.exceptions.ChildNotFoundException;
+import com.sparta.ah.sorters.Sorter;
 
 public class BinaryTree implements Sorter, BinaryTreeInterface {
 
-    long elapsedTime;
-    // public method - Interface
-    // private method - Implementation
+    double start;
+    double stop;
     private Node rootNode;
     private int[] sortedTree;
     private int count;
@@ -147,7 +147,9 @@ public class BinaryTree implements Sorter, BinaryTreeInterface {
     @Override
     public int[] sortArray(int[] arrayToSort) {
         BinaryTree tree = new BinaryTree(arrayToSort);
+        start = System.nanoTime();
         int[] sortedArray = tree.getSortedTreeAsc();
+        stop = System.nanoTime();
         return sortedArray;
     }
 
@@ -188,6 +190,11 @@ public class BinaryTree implements Sorter, BinaryTreeInterface {
         count = 0;
         sortTreeDesc(rootNode);
         return sortedTree;
+    }
+
+    @Override
+    public double getSortingTime() {
+        return stop - start;
     }
 }
 

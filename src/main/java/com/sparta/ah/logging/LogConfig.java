@@ -1,4 +1,4 @@
-package com.sparta.ah;
+package com.sparta.ah.logging;
 
 import com.sparta.ah.logging.CustomFilter;
 import com.sparta.ah.logging.CustomFormatter;

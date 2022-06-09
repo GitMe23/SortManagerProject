@@ -1,4 +1,4 @@
-package com.sparta.ah;
+package com.sparta.ah.exceptions;
 
 public class SorterLoaderException extends RuntimeException {
     public SorterLoaderException(String errorMessage){

@@ -1,17 +1,11 @@
 package com.sparta.ah.sorters.bubblesort;
 
-import com.sparta.ah.Sorter;
-import com.sparta.ah.logging.CustomFilter;
-import com.sparta.ah.logging.CustomFormatter;
-
-import java.io.IOException;
-import java.util.logging.FileHandler;
-import java.util.logging.Handler;
-import java.util.logging.Logger;
+import com.sparta.ah.sorters.Sorter;
 
 public class BubbleSort implements Sorter {
 
-
+    double start;
+    double stop;
     /*
     Returns a sorted array of integers using a bubble sort algorithm
      */
@@ -47,7 +41,14 @@ public class BubbleSort implements Sorter {
 
     @Override
     public int[] sortArray(int[] arrayToSort) {
+        start = System.nanoTime();
         int[] sorted = this.bubbleSortIntegerArray(arrayToSort);
+        stop = System.nanoTime();
         return sorted;
+    }
+
+    @Override
+    public double getSortingTime() {
+        return stop - start;
     }
 }

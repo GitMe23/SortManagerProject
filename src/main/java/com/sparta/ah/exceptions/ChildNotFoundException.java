@@ -1,4 +1,4 @@
-package com.sparta.ah.sorters.binarytree;
+package com.sparta.ah.exceptions;
 
 public class ChildNotFoundException extends RuntimeException {
     public ChildNotFoundException() {

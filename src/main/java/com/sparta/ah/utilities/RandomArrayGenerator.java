@@ -1,4 +1,4 @@
-package com.sparta.ah;
+package com.sparta.ah.utilities;
 
 import java.util.Random;
 
@@ -8,7 +8,7 @@ public class RandomArrayGenerator {
         Random randomGen = new Random();
         int[] randomArray = new int[size];
         for (int i = 0; i < randomArray.length; i++) {
-            randomArray[i] = randomGen.nextInt(size); // storing random integers in an array
+            randomArray[i] = randomGen.nextInt(999); // storing random integers in an array
 
 
         }

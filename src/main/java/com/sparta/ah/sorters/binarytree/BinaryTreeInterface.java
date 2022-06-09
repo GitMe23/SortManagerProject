@@ -1,5 +1,7 @@
 package com.sparta.ah.sorters.binarytree;
 
+import com.sparta.ah.exceptions.ChildNotFoundException;
+
 public interface BinaryTreeInterface {
 
 
