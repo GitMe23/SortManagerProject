@@ -42,7 +42,7 @@ public class BubbleSort implements Sorter {
     @Override
     public int[] sortArray(int[] arrayToSort) {
         start = System.nanoTime();
-        int[] sorted = this.bubbleSortIntegerArray(arrayToSort);
+        int[] sorted = bubbleSortIntegerArray(arrayToSort);
         stop = System.nanoTime();
         return sorted;
     }

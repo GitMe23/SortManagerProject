@@ -14,7 +14,7 @@ public class InsertionSorterTest {
     public void checkInsertionSorterReturnsSortedArray() {
         int[] toSort = new int[] {100, 40, 20, 30};
         InsertionSorter.sort(toSort);
-        String expected = Arrays.toString(new int[] {20, 30, 40, 100};
+        String expected = Arrays.toString(new int[] {20, 30, 40, 100});
         String actual = Arrays.toString(toSort);
         Assertions.assertEquals(expected, actual);
     }

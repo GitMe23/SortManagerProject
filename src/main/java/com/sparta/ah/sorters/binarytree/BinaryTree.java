@@ -21,7 +21,7 @@ public class BinaryTree implements Sorter, BinaryTreeInterface {
 
     public BinaryTree(final int[] elements) {
         rootNode = new Node(elements[0]);
-        for (int i = 1; i < elements.length; i++) {
+        for (int i = 0; i < elements.length; i++) {
             addElement(elements[i]);
         }
     }
@@ -112,7 +112,7 @@ public class BinaryTree implements Sorter, BinaryTreeInterface {
 
     }
 
-    /// all above working to here.
+
 
     @Override
     public int getLeftChild(int element) throws ChildNotFoundException {

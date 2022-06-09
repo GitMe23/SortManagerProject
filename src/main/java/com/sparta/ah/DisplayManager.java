@@ -31,11 +31,13 @@ public class DisplayManager {
         System.out.println("Random array to sort: ");
         System.out.println(Arrays.toString(arrayToSort));
         System.out.println("");
-        System.out.println("Array after using the " + sorter.printSorterType() + " algorithm: ");
+        System.out.println("Array after sorting with the " + sorter.printSorterType() + " algorithm: ");
         int[] sortedArray = sorter.sortArray(arrayToSort);
         System.out.println(Arrays.toString(sortedArray));
         System.out.println("");
-        System.out.println("Sorting time for " + sorter.printSorterType() + ": " + sorter.getSortingTime() + " nanoseconds.");
+        System.out.println("Sorting time for " + sorter.printSorterType() + ": "
+                + sorter.getSortingTime() + " nanoseconds / "
+                + sorter.getSortingTime() / 1_000_000 + " milliseconds.");
         System.out.println("");
 
     }

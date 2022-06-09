@@ -11,6 +11,7 @@ public class SortManager {
         // print intro
 
 
+
         int mainMenuInput = InputManager.getMainMenuChoice();
 
         while (mainMenuInput == 1) {
@@ -37,4 +38,6 @@ public class SortManager {
 
 
     }
+
+
 }
