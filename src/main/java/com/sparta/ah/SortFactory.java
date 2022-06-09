@@ -11,7 +11,7 @@ public class SortFactory {
         switch (choice) {
 
             case 1:
-                return new BinaryTree(2);
+                return new BinaryTree();
             case 2:
                 return new BubbleSort();
 

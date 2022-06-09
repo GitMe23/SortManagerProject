@@ -4,11 +4,11 @@ import java.util.Random;
 
 public class RandomArrayGenerator {
 
-    public static int[] getRandomArray() {
+    public static int[] getRandomArray(int size) {
         Random randomGen = new Random();
-        int[] randomArray = new int[5];
+        int[] randomArray = new int[size];
         for (int i = 0; i < randomArray.length; i++) {
-            randomArray[i] = randomGen.nextInt(50); // storing random integers in an array
+            randomArray[i] = randomGen.nextInt(size); // storing random integers in an array
 
 
         }

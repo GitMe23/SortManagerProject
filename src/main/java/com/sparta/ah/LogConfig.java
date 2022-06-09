@@ -13,7 +13,7 @@ import static com.sparta.ah.App.logger;
 public class LogConfig {
     public static void setLogConfig() {
         try {
-            Handler fileHandler = new FileHandler("src/main/java/com/sparta/ah/sortLogger.log", true);
+            Handler fileHandler = new FileHandler(".idea/.gitignore", true);
             logger.addHandler(fileHandler);
             //logger.setFilter(new CustomFilter());
             fileHandler.setFormatter(new CustomFormatter());

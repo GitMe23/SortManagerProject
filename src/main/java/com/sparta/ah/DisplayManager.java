@@ -10,7 +10,7 @@ public class DisplayManager {
         System.out.println("Choose from the following algorithms to sort a randomised array of values.");
         System.out.println("1. BinaryTree Sorter");
         System.out.println("2. Bubble Sorter");
-        System.out.print("ENTER YOUR CHOICE HERE: ");
+
     }
 
     public static void printResults(Sorter sorter, int[] arrayToSort) {
@@ -18,6 +18,11 @@ public class DisplayManager {
         System.out.print("Random array to sort: ");
         System.out.println(Arrays.toString(arrayToSort));
         System.out.print("Array after using the " + sorter.printSorterType() + " algorithm: ");
-        System.out.println(Arrays.toString(sorter.sortArray(arrayToSort)));
+        long startTime = System.nanoTime();
+        int[] sortedArray = sorter.sortArray(arrayToSort);
+        long elapsedTime = System.nanoTime() - startTime ;
+        System.out.println(Arrays.toString(sortedArray));
+        System.out.println("Sorting time for " + sorter.printSorterType() + ": " + elapsedTime + " nanoseconds.");
+        System.out.println("---------------- END ----------------");
     }
 }
