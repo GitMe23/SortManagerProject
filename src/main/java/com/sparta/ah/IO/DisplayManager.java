@@ -35,8 +35,9 @@ public class DisplayManager {
         System.out.println(Arrays.toString(arrayToSort));
         System.out.println("");
         System.out.println("Array after sorting with the " + sorter.printSorterType() + " algorithm: ");
-        logger.log(Level.INFO, "Sorted using " + sorter.printSorterType() );
+
         int[] sortedArray = sorter.sortArray(arrayToSort);
+        logger.log(Level.INFO, "Sorted using " + sorter.printSorterType() + ". Sort time: "  + sorter.getSortingTime() / 1_000_000 + " milliseconds.");
         System.out.println(Arrays.toString(sortedArray));
         System.out.println("");
         System.out.println("Sorting time for " + sorter.printSorterType() + ": "

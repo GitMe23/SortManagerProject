@@ -18,7 +18,7 @@ public class SortManager {
 
         mainMenuInput = InputManager.getMainMenuChoice();
         while (mainMenuInput == 1) {
-            logger.log(Level.INFO, "User chose 1 to run program");
+            logger.log(Level.INFO, "Menu input at 1 to run program");
             DisplayManager.displayProgram();
 
 
@@ -39,7 +39,7 @@ public class SortManager {
         }
 
         if(mainMenuInput == 0) {
-            logger.log(Level.INFO, "User chose 0 to exit");
+            logger.log(Level.INFO, "Menu input at 0 to exit");
         }
 
     }
