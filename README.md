@@ -27,6 +27,7 @@ to run, or <code>0</code> to exit.</p>
     <li><code>Bubble sort</code></li>
     <li><code>Insertion Sort</code></li>
     <li><code>Quick sort</code></li>
+    <li><code>Merge sort</code></li>
 
 </ol> 
 <p>The user is then prompted <code>ENTER SIZE OF ARRAY</code> to generate a randomised integer array.</p>
