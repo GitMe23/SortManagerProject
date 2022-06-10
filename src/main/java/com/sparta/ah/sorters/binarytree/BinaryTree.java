@@ -65,11 +65,6 @@ public class BinaryTree implements Sorter, BinaryTreeInterface {
         }
     }
 
-
-    public Node getRootNode() {
-        return this.rootNode;
-    }
-
     @Override
     public int getRootElement() {
         return rootNode.getValue();
@@ -77,7 +72,7 @@ public class BinaryTree implements Sorter, BinaryTreeInterface {
 
     @Override
     public int getNumberOfElements() {
-        return countNodes(this.getRootNode());
+        return numberOfNodes;
     }
 
     @Override
@@ -143,8 +138,6 @@ public class BinaryTree implements Sorter, BinaryTreeInterface {
         if (root == null) {
             return 0;
         }
-        // recursively call countNodes with each left and right node
-        // plus one for root and each node
         int leftNumber = countNodes(root.getLeftChild());
         int rightNumber = countNodes(root.getRightChild());
         return leftNumber + rightNumber + 1;

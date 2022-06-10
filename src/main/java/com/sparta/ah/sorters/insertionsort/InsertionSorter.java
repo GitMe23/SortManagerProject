@@ -39,6 +39,7 @@ public class InsertionSorter implements Sorter {
 
     @Override
     public int[] sortArray(int[] arrayToSort) {
+
         start = System.nanoTime();
         InsertionSorter.sort(arrayToSort);
         stop = System.nanoTime();

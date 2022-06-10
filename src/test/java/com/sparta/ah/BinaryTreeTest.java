@@ -126,8 +126,7 @@ public class BinaryTreeTest {
     @DisplayName("check findElement returns true given element in array")
     public void checkFindElementReturnsTrue() {
         BinaryTree tree = new BinaryTree(new int[]{2,3,4});
-        Assertions.assertEquals(true,
-                tree.findElement(2));
+        Assertions.assertTrue(tree.findElement(2));
     }
 
 

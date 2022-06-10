@@ -10,7 +10,7 @@ import static com.sparta.ah.contol.SortManager.logger;
 public class LogConfig {
     public static void setLogConfig() {
         try {
-            Handler fileHandler = new FileHandler("target/sort-logs.log", true);
+            Handler fileHandler = new FileHandler("src/main/java/com/sparta/ah/logging/logs/sort-manager.log", true);
             logger.addHandler(fileHandler);
             //logger.setFilter(new CustomFilter());
             fileHandler.setFormatter(new CustomFormatter());

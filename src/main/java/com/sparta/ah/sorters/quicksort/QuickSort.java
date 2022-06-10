@@ -7,15 +7,13 @@ public class QuickSort implements Sorter {
     double start;
     double stop;
     private int[] numbers;
-    private int number;
 
 
     public int[] sortArray(int[] arrayToSort) {
-        // check for empty or null array
-
+        if (arrayToSort.length < 1) return arrayToSort;
         this.numbers = arrayToSort;
         start = System.nanoTime();
-        number = arrayToSort.length;
+        int number = arrayToSort.length;
         quicksort(0, number - 1);
         stop = System.nanoTime();
         return arrayToSort;

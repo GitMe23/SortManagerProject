@@ -9,27 +9,24 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class SortManager {
-    public static Logger logger = Logger.getLogger("sort logger");
 
+    public static Logger logger = Logger.getLogger("sort logger");
     public static void run() {
 
         LogConfig.setLogConfig();
+
         int mainMenuInput = InputManager.getMainMenuChoice();
         while (mainMenuInput == 1) {
 
             DisplayManager.displayProgram();
 
-            // get sorter choice and array size from user
             int choice = InputManager.getUserChoice();
             int arraySize = InputManager.getSizeOfArray();
 
 
-            // create sorter object from factory
             Sorter sorter = SortFactory.getSorter(choice);
-            // generate array to sort
             int[] arrayToSort = RandomArrayGenerator.getRandomArray(arraySize);
 
-            // pass everything to display
             DisplayManager.printResults(sorter, arrayToSort);
             mainMenuInput = InputManager.getRunAgainChoice();
             System.out.println("");
@@ -38,7 +35,7 @@ public class SortManager {
 
 
         }
-        //logger.log(Level.INFO, "log" );
+
 
     }
 

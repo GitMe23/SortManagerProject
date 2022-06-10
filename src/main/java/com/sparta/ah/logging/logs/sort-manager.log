@@ -1,0 +1,26 @@
+2022-06-10T13:31:24.4948474 INFO User typed 0
+2022-06-10T13:31:24.5088103 INFO Program displayed "You have entered an unrecognised value. " 
+2022-06-10T13:33:33.6086469 INFO User typed 0
+2022-06-10T13:33:33.6226104 INFO Program displayed "You have entered an unrecognised value. " 
+2022-06-10T13:39:03.9331439 INFO User typed 10
+2022-06-10T13:39:03.9471065 INFO Program displayed "You have entered an unrecognised value. " 
+2022-06-10T13:39:29.2711798 INFO User typed 20
+2022-06-10T13:39:29.2721809 INFO Program displayed "You have entered an unrecognised value. " 
+2022-06-10T13:39:52.1927826 INFO User typed 1
+2022-06-10T13:39:52.1937807 INFO Program displayed "You have entered an unrecognised value. " 
+2022-06-10T14:05:04.4823506 INFO User typed 10
+2022-06-10T14:05:04.4963131 INFO Program displayed "You have entered an unrecognised value. " 
+2022-06-10T14:08:01.9787936 INFO User typed 0
+2022-06-10T14:08:01.9927569 INFO Program displayed "You have entered an unrecognised value. " 
+2022-06-10T14:26:51.7869844 INFO User typed 6
+2022-06-10T14:26:51.8019444 INFO Program displayed "You have entered an unrecognised value. " 
+2022-06-10T14:56:35.2597392 INFO User typed 20
+2022-06-10T14:56:35.274699 INFO Program displayed "You have entered an unrecognised value. " 
+2022-06-10T14:57:13.1468023 INFO User typed 10
+2022-06-10T14:57:13.1478018 INFO Program displayed "You have entered an unrecognised value. " 
+2022-06-10T15:54:31.2119616 INFO User typed 0
+2022-06-10T15:54:31.2259269 WARNING Printed "Error: Enter a number between 1 and 100 only. " 
+2022-06-10T15:54:41.8994401 INFO User typed 0
+2022-06-10T15:54:41.900438 INFO Program displayed "You have entered an unrecognised value. " 
+2022-06-10T15:59:51.0116888 INFO User typed 0
+2022-06-10T15:59:51.0266489 INFO Program displayed "You have entered an unrecognised value. " 

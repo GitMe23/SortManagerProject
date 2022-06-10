@@ -1,9 +1,11 @@
 package com.sparta.ah.IO;
 import com.sparta.ah.exceptions.ArrayFormatException;
 import com.sparta.ah.exceptions.MenuInputException;
-import org.w3c.dom.ls.LSOutput;
 
 import java.util.Scanner;
+import java.util.logging.Level;
+
+import static com.sparta.ah.contol.SortManager.logger;
 
 public class InputManager {
 
@@ -14,8 +16,14 @@ public class InputManager {
 
         try {
             choice = Integer.parseInt(userInput.nextLine());
-            return choice;
+            if (choice == 0 | choice == 1) {
+                return choice;
+            } else {
+                logger.log(Level.INFO, "User typed " + choice);
+                throw new MenuInputException();
+            }
         } catch (NumberFormatException e) {
+            logger.log(Level.INFO, "User typed " + choice);
             throw new MenuInputException();
         }
     }
@@ -28,9 +36,11 @@ public class InputManager {
             if (choice > 0 && choice <= 5) {
                 return choice;
             } else {
+                logger.log(Level.INFO, "User typed " + choice);
                 throw new MenuInputException();
             }
         } catch (NumberFormatException e) {
+            logger.log(Level.INFO, "User typed " + choice);
             throw new MenuInputException();
         }
     }
@@ -44,9 +54,11 @@ public class InputManager {
             if (choice > 0 && choice <= 100) {
                 return choice;
             } else {
+                logger.log(Level.INFO, "User typed " + choice);
                 throw new ArrayFormatException();
             }
         } catch (NumberFormatException e) {
+            logger.log(Level.INFO, "User typed " + choice);
             throw new ArrayFormatException();
         }
     }
@@ -59,9 +71,11 @@ public class InputManager {
                 if (choice > 0 && choice <=5) {
                    return choice;
                } else {
+                    logger.log(Level.INFO, "User typed " + choice);
                     throw new MenuInputException();
                 }
             } catch (NumberFormatException e) {
+                logger.log(Level.INFO, "User typed " + choice);
                 throw new MenuInputException();
             }
         }
