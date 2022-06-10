@@ -27,7 +27,7 @@ public class SortFactory {
                 return new MergeSort();
 
             default:
-                throw new SorterLoaderException("Not recognised - please run again and choose from the sorters above");
+                throw new SorterLoaderException();
 
         }
     }

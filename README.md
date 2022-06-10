@@ -1,19 +1,19 @@
 # Sort Manager Project
 ### Contents:
 <ul>
-        <li><a href="#Overview">Overview</a></li>
-        <li><a href="Input">Input</a> </li>
-        <li><a href="Output">Output</a> </li>
-        <li><a href="Design">Design</a> </li>
-        <li><a href="SpeedTest">Speed Comparison Test</a> </li>
-        <li><a href="Tools">Tools</a> </li>
+        <li>Overview</li>
+        <li>Input</li>
+        <li>Output </li>
+        <li>Design </li>
+        <li>Speed Comparison Test </li>
+        <li>Tools </li>
 </ul>
 
 
 
 
 ### Overview
-<p id="Overview">The Sort Manager Project is a Java program that allows a user to sort a randomised 
+<p>The Sort Manager Project is a Java program that allows a user to sort a randomised 
 array.</p>
 <p>The user is presented with a choice of sort algorithms as well as their desired array length. </p>
 
@@ -23,12 +23,11 @@ array.</p>
 to run, or <code>0</code> to exit.</p>
 <p>When the program runs, the user is prompted to enter <code>1</code>,<code>2</code>,<code>3</code>,<code>4</code> or <code>5</code>  to choose between:
 <ol>
-<code>
-    <li>BinaryTree sort</li>
-    <li>Bubble sort</li>
-    <li>Insertion Sort</li>
-    <li>Quick sort</li>
-</code>
+    <li><code>BinaryTree sort</code></li>
+    <li><code>Bubble sort</code></li>
+    <li><code>Insertion Sort</code></li>
+    <li><code>Quick sort</code></li>
+
 </ol> 
 <p>The user is then prompted <code>ENTER SIZE OF ARRAY</code> to generate a randomised integer array.</p>
 <p>When the program finishes, the user is taken back to the main menu: <code>Enter 1 to run, 0 to exit</code>. </p>
