@@ -1,5 +1,6 @@
 package com.sparta.ah;
 
+import com.sparta.ah.sorters.Sorter;
 import com.sparta.ah.sorters.binarytree.BinaryTree;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
@@ -8,8 +9,21 @@ import org.junit.jupiter.api.DisplayName;
 public class BinaryTreeTest {
 
 
+    @Test
+    @DisplayName("Check nested Node object accepts and returns correct value")
+    public void checkNodeGetValue() {
+        BinaryTree.Node node = new BinaryTree.Node(5);
+        Assertions.assertEquals(5, node.getValue());
+    }
 
-
+    @Test
+    @DisplayName("Check nested Node getLeftChild method accepts and returns correct value")
+    public void checkNodeGetLeftChildValue() {
+        BinaryTree.Node node = new BinaryTree.Node(5);
+        BinaryTree.Node left = new BinaryTree.Node(2);
+        node.setLeftChild(left);
+        Assertions.assertEquals(2, node.getLeftChild().getValue());
+    }
     @Test
     @DisplayName("check that getRootElement returns a given root node")
     public void checkGetRootElement() {

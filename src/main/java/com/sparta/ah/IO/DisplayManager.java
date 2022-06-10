@@ -1,4 +1,4 @@
-package com.sparta.ah;
+package com.sparta.ah.IO;
 
 import com.sparta.ah.sorters.Sorter;
 
@@ -21,6 +21,7 @@ public class DisplayManager {
         System.out.println("2. Bubble Sorter");
         System.out.println("3. Insertion Sorter");
         System.out.println("4. Quick Sorter");
+        System.out.println("5. Merge Sorter");
         System.out.println("");
     }
 

@@ -1,8 +1,7 @@
 package com.sparta.ah;
 
-import com.sparta.ah.logging.LogConfig;
-
-import java.util.logging.Logger;
+import com.sparta.ah.IO.DisplayManager;
+import com.sparta.ah.contol.SortManager;
 
 
 public class App
@@ -11,7 +10,7 @@ public class App
     public static void main( String[] args )
     {
         DisplayManager.displayMainMenu();
-        LogConfig.setLogConfig();
+
         SortManager.run();
     }
 }
