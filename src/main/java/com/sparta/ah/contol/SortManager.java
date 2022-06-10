@@ -10,25 +10,27 @@ import java.util.logging.Logger;
 
 public class SortManager {
 
+    static int mainMenuInput;
     public static Logger logger = Logger.getLogger("sort logger");
     public static void run() {
 
         LogConfig.setLogConfig();
 
-        int mainMenuInput = InputManager.getMainMenuChoice();
+        mainMenuInput = InputManager.getMainMenuChoice();
         while (mainMenuInput == 1) {
-
+            logger.log(Level.INFO, "User chose 1 to run program");
             DisplayManager.displayProgram();
+
 
             int choice = InputManager.getUserChoice();
             int arraySize = InputManager.getSizeOfArray();
 
 
             Sorter sorter = SortFactory.getSorter(choice);
+            logger.log(Level.INFO, "User chose " + sorter.printSorterType() + " and an array length of " + arraySize);
             int[] arrayToSort = RandomArrayGenerator.getRandomArray(arraySize);
 
             DisplayManager.printResults(sorter, arrayToSort);
-            mainMenuInput = InputManager.getRunAgainChoice();
             System.out.println("");
             System.out.println("--------------------- END ---------------------");
             System.out.println("");
@@ -36,8 +38,12 @@ public class SortManager {
 
         }
 
+        if(mainMenuInput == 0) {
+            logger.log(Level.INFO, "User chose 0 to exit");
+        }
 
     }
+
 
 
 }

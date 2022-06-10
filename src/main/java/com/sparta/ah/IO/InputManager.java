@@ -1,4 +1,5 @@
 package com.sparta.ah.IO;
+import com.sparta.ah.contol.SortManager;
 import com.sparta.ah.exceptions.ArrayFormatException;
 import com.sparta.ah.exceptions.MenuInputException;
 
@@ -11,6 +12,8 @@ public class InputManager {
 
     static int choice;
     public static int getMainMenuChoice() {
+        System.out.println("-------------------- MAIN MENU --------------------");
+        System.out.println("");
         System.out.print("Enter 1 to run program or 0 to exit: ");
         Scanner userInput = new Scanner(System.in);
 
@@ -29,7 +32,7 @@ public class InputManager {
     }
 
     public static int getUserChoice() {
-        System.out.print("ENTER YOUR CHOICE HERE: ");
+        System.out.print("ENTER 1-5 OR 0 FOR MAIN MENU: ");
         Scanner userInput = new Scanner(System.in);
         try {
             choice = Integer.parseInt(userInput.nextLine());
@@ -63,21 +66,6 @@ public class InputManager {
         }
     }
 
-        public static int getRunAgainChoice() {
-            System.out.print("Enter 1 to run again, 0 to exit: ");
-            Scanner userInput = new Scanner(System.in);
-            try {
-                choice = Integer.parseInt(userInput.nextLine());
-                if (choice > 0 && choice <=5) {
-                   return choice;
-               } else {
-                    logger.log(Level.INFO, "User typed " + choice);
-                    throw new MenuInputException();
-                }
-            } catch (NumberFormatException e) {
-                logger.log(Level.INFO, "User typed " + choice);
-                throw new MenuInputException();
-            }
-        }
+
     }
 

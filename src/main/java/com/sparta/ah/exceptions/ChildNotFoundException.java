@@ -7,6 +7,6 @@ import static com.sparta.ah.contol.SortManager.logger;
 public class ChildNotFoundException extends RuntimeException {
     public ChildNotFoundException() {
         super();
-        logger.log(Level.INFO, "Element does not have a child");
+        logger.log(Level.WARNING, "Element does not have a child");
     }
 }

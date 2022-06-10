@@ -10,9 +10,7 @@ public class MenuInputException extends RuntimeException{
 
     public MenuInputException() {
         System.out.println("");
-        String menuErrorMessage = "You have entered an unrecognised value. ";
-        System.out.print(menuErrorMessage);
-        logger.log(Level.INFO, "Program displayed \"" + menuErrorMessage + "\" ");
+        logger.log(Level.WARNING, "Program threw MenuInputException ");
         SortManager.run();
     }
 

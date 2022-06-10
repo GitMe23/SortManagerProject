@@ -5,7 +5,7 @@
         <li>Input</li>
         <li>Output </li>
         <li>Design </li>
-        <li>Speed Comparison Test </li>
+        <li>Testing</li>
         <li>Tools </li>
 </ul>
 
@@ -38,10 +38,11 @@ a sorted array with the user's choice of algorithm, and the time taken for the a
 
 ### Design
 
-<p id="Design">The SortManager Project employs a <i>Model-View-Controller</i> (MVC) design pattern, and within that a <i>factory</i> design pattern.</p>
+<p id="Design">The SortManager Project employs a <i>Model-View-Controller</i> (MVC) design pattern, and within that a <i>factory</i> design pattern. It uses a <code>DisplayManager</code> class, or <i>View</i> class, responsible for printing output, a <>Model</> package responsible for housing sorting classes, and a <i>Controller</i> package that contains a <code>Controller</code> class.</p>
+<p>The controller package also contains a <code>SortFactory</code> class that creates instances of any chosen sorter. This way, the program only needs to create one sorter when selected instead of creating all of them upon starting. </p>
 
-### Speed Comparison Test
-<p id="SpeedTest"></p>
+### Testing 
+<p id="SpeedTest">The repository contains JUnit test files including a class that runs all algorithms, displaying each algorithm's sorting time.</p>
 
 ### Tools
 <ul id="Tools">
