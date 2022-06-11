@@ -1,4 +1,7 @@
 # Sort Manager Project
+
+![GitHub commit checks state](https://img.shields.io/github/checks-status/GitMe23/SortManagerProject/6bf7d55d45511f8a57d6169d3abb9f95c758ec88?logo=GitHub&style=for-the-badge)
+
 ### Contents:
 <ul>
         <li>Overview</li>
